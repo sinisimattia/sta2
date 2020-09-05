@@ -11,7 +11,7 @@
         <b-navbar-item
           tag="nuxt-link"
           exact-active-class="has-text-primary"
-          :to="{ name: 'articles' }"
+          to="#"
         >
           <IconLabel icon="newspaper">Articles</IconLabel>
         </b-navbar-item>
@@ -19,7 +19,7 @@
         <b-navbar-item
           tag="nuxt-link"
           exact-active-class="has-text-primary"
-          :to="{ name: 'blogs' }"
+          to="#"
         >
           <IconLabel icon="th">Blogs</IconLabel>
         </b-navbar-item>
@@ -36,17 +36,7 @@
       <template #end>
         <b-navbar-item tag="div">
           <nuxt-link
-            v-if="username"
-            to="/account"
-            class="button is-secondary has-margin is-rounded has-shadow-soft"
-          >
-            <span class="has-text-link">@</span>
-            <span>{{ username }}</span>
-          </nuxt-link>
-
-          <nuxt-link
-            v-else
-            :to="{ path: '/enter' }"
+            to="#"
             class="button is-primary has-margin is-rounded"
           >
             Enter
