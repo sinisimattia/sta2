@@ -3,7 +3,7 @@
     <b-navbar wrapper-class="container" class="sticky-top">
       <template #brand>
         <b-navbar-item tag="nuxt-link" :to="{ path: '/' }">
-          <p class="title">SNI</p>
+          <p class="title">{{logo.alt}}</p>
         </b-navbar-item>
       </template>
 
@@ -68,7 +68,7 @@
         </section>
 
         <section class="has-text-centered">
-          <p>Built and maintained with 🧡 by <b>Mattia Sinisi</b></p>
+          <p>{{credit}}</p>
         </section>
       </div>
     </section>
@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import { contacts, links, navigation } from '~/snisni.config.json'
+import { contacts, links, navigation, identity } from '~/snisni.config.json'
 
 import CoolLink from '~/components/molecoles/CoolLink'
 import IconLabel from '~/components/atoms/IconLabel'
@@ -108,7 +108,9 @@ export default {
       links,
       contacts,
       pages: navigation.pages,
-      cta: navigation.cta
+      cta: navigation.cta,
+      logo: identity.logo,
+      credit: identity.credit,
     }
   },
 }

@@ -1,10 +1,12 @@
 {
   "identity": {
-    "name": "SNISNI",
+    "name": "application",
+    "slogan": "The new release",
     "logo": {
       "image": "#",
-      "alt": "SNI"
-    }
+      "alt": "app"
+    },
+    "credit": "Built with 🧡"
   },
   "navigation": {
     "cta": {

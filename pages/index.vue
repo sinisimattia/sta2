@@ -7,10 +7,9 @@
         <div class="hero-body container has-text-centered">
           <div>
             <h1 class="title is-0 glow is-light is-still">
-              <span>SNI</span>
-              <span>SNI</span>
+              <span>{{title}}</span>
             </h1>
-            <h2 class="subtitle is-4">The <u>orange</u> release.</h2>
+            <h2 class="subtitle is-4">{{subtitle}}</h2>
           </div>
         </div>
       </div>
@@ -44,3 +43,16 @@
     </div>
   </div>
 </template>
+
+<script>
+import { identity } from '~/snisni.config.json'
+
+export default {
+  data(){
+    return {
+      title: identity.name,
+      subtitle: identity.slogan
+    }
+  }
+}
+</script>
