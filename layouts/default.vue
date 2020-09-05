@@ -15,7 +15,7 @@
           exact-active-class="has-text-primary"
           :to="page.href"
         >
-          <IconLabel :icon="page.icon">{{page.name}}</IconLabel>
+          <IconLabel :icon="page.icon.name" :pack="page.icon.pack">{{page.name}}</IconLabel>
         </b-navbar-item>
       </template>
 
@@ -25,7 +25,7 @@
             :to="cta.href"
             class="button is-primary has-margin is-rounded"
           >
-            <IconLabel :icon="cta.icon">{{cta.name}}</IconLabel>
+            <IconLabel :icon="cta.icon.name" :pack="cta.icon.pack">{{cta.name}}</IconLabel>
           </nuxt-link>
         </b-navbar-item>
       </template>
