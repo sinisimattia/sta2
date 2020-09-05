@@ -1,10 +1,12 @@
+require('dotenv').config()
+
 module.exports = {
   mode: 'universal',
   /*
    ** Headers of the page
    */
   head: {
-    title: 'EtiQa Group',
+    title: process.env.APP_NAME,
     meta: [
       {
         charset: 'utf-8',
