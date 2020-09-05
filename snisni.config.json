@@ -1,14 +1,11 @@
 {
-  "token": {
-    "name": "snisni_passport"
-  },
   "contacts": [{
       "name": "GitHub",
       "icon": {
         "pack": "fab",
         "name": "github"
       },
-      "href": "https://github.com/snisniplanet"
+      "href": "#"
     },
     {
       "name": "Contact Us",
@@ -16,12 +13,12 @@
         "pack": "fas",
         "name": "envelope"
       },
-      "href": "mailto:team@snisni.it"
+      "href": "#"
     }
   ],
   "links": {
-    "privacy_policy": "https://www.iubenda.com/privacy-policy/56192331",
-    "report_issues": "https://github.com/snisniplanet/frontend/issues"
+    "privacy_policy": "#",
+    "report_issues": "#"
   }
 
 }

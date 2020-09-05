@@ -4,34 +4,34 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'SNISNI',
+    title: 'EtiQa Group',
     meta: [
       {
-        charset: 'utf-8'
+        charset: 'utf-8',
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        content: 'width=device-width, initial-scale=1',
       },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
-      }
-    ]
+        href: '/favicon.ico',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
    */
   loading: {
-    color: '#000'
+    color: '#000',
   },
   /*
    ** Global CSS
@@ -48,25 +48,19 @@ module.exports = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: [],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
-    // Doc: https://axios.nuxtjs.org/
-    '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    // Doc: https://github.com/nuxt-community/proxy-module
-    '@nuxtjs/proxy',
     // Doc: https://www.npmjs.com/package/@nuxtjs/style-resources
     '@nuxtjs/style-resources',
     // Doc: https://www.npmjs.com/package/nuxt-fontawesome
     'nuxt-fontawesome',
-    // Doc: https://www.npmjs.com/package/cookie-universal-nuxt
-    ['cookie-universal-nuxt', { parseJSON: false }]
   ],
   /**
    * Buefy module configuration
@@ -75,7 +69,7 @@ module.exports = {
   buefy: {
     css: false,
     materialDesignIcons: false,
-    defaultIconPack: 'fas'
+    defaultIconPack: 'fas',
   },
 
   /**
@@ -89,17 +83,17 @@ module.exports = {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
+        icons: ['fas'],
       },
       {
         set: '@fortawesome/free-brands-svg-icons',
-        icons: ['fab']
-      }
-    ]
+        icons: ['fab'],
+      },
+    ],
   },
 
   styleResources: {
-    scss: ['~assets/scss/app.scss']
+    scss: ['~assets/scss/app.scss'],
   },
 
   /*
@@ -112,7 +106,7 @@ module.exports = {
   axios: {
     baseURL: 'http://backend/',
     browserBaseURL: 'http://localhost:8080',
-    proxy: true
+    proxy: true,
   },
   /*
    ** Build configuration
@@ -121,6 +115,6 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }

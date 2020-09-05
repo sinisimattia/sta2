@@ -22,29 +22,18 @@
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@nuxt/http": "^0.5.12",
-    "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/proxy": "^2.0.1",
-    "class-validator": "^0.12.2",
-    "cookie-universal-nuxt": "^2.1.4",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
-    "lodash-es": "^4.17.15",
     "nuxt": "^2.14.4",
     "nuxt-buefy": "^0.4.3",
     "nuxt-fontawesome": "^0.4.0",
-    "prosemirror-to-html-js": "^1.0.2",
-    "tiptap": "^1.29.6",
-    "tiptap-extensions": "^1.32.7",
     "vue": "^2.6.12"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-flow": "^7.10.4",
-    "@nuxt/typescript-build": "^2.0.3",
-    "@nuxtjs/eslint-config-typescript": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "@vue/test-utils": "^1.0.5",
@@ -61,8 +50,6 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
     "sass-loader": "^10.0.2",
-    "ts-jest": "^26.3.0",
-    "vue-jest": "^4.0.0-beta.3",
-    "vue-ts-plugin": "^0.1.0"
+    "vue-jest": "^4.0.0-beta.3"
   }
 }

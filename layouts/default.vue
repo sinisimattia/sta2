@@ -103,7 +103,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import { contacts, links } from '~/snisni.config.json'
 
 import CoolLink from '~/components/molecoles/CoolLink'
@@ -137,11 +136,6 @@ export default {
       contacts
     }
   },
-
-  computed: mapGetters({
-    userId: 'user/id',
-    username: 'user/username'
-  })
 }
 </script>
 
