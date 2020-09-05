@@ -8,6 +8,10 @@
     },
     "credit": "Built with 🧡"
   },
+  "components": {
+    "banner": {},
+    "footer": {}
+  },
   "navigation": {
     "cta": {
       "name": "GitHub",
