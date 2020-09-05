@@ -72,10 +72,7 @@
           </aside>
 
           <aside class="column">
-            <CoolLink to="/inspire" icon="book">About</CoolLink>
-
             <CoolLink :to="links.privacy_policy" icon="lock">Privacy Policy</CoolLink>
-
             <CoolLink :to="links.report_issues" icon="bug">Spotted a bug?</CoolLink>
           </aside>
 
