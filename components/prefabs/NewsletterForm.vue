@@ -1,7 +1,7 @@
 <template>
   <div id="mc_embed_signup">
     <form
-      :action="url"
+      :action="link"
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
