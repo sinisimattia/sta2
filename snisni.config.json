@@ -1,4 +1,39 @@
 {
+  "identity": {
+    "name": "SNISNI",
+    "logo": {
+      "image": "#",
+      "alt": "SNI"
+    }
+  },
+  "navigation": {
+    "cta": {
+      "name": "GitHub",
+      "icon": {
+        "pack": "fab",
+        "name": "github"
+      },
+      "href": "#"
+    },
+    "pages": [
+      {
+        "name": "GitHub",
+        "icon": {
+          "pack": "fab",
+          "name": "github"
+        },
+        "href": "#"
+      },
+      {
+        "name": "About",
+        "icon": {
+          "pack": "fab",
+          "name": "github"
+        },
+        "href": "#"
+      }
+    ]
+  },
   "contacts": [{
       "name": "GitHub",
       "icon": {

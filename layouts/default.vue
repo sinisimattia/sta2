@@ -9,37 +9,23 @@
 
       <template #start>
         <b-navbar-item
+          v-for="page in pages"
+          :key="page.href"
           tag="nuxt-link"
           exact-active-class="has-text-primary"
-          to="#"
+          :to="page.href"
         >
-          <IconLabel icon="newspaper">Articles</IconLabel>
-        </b-navbar-item>
-
-        <b-navbar-item
-          tag="nuxt-link"
-          exact-active-class="has-text-primary"
-          to="#"
-        >
-          <IconLabel icon="th">Blogs</IconLabel>
-        </b-navbar-item>
-
-        <b-navbar-item
-          tag="nuxt-link"
-          exact-active-class="has-text-primary"
-          to="#"
-        >
-          <IconLabel icon="cubes">APIs</IconLabel>
+          <IconLabel :icon="page.icon">{{page.name}}</IconLabel>
         </b-navbar-item>
       </template>
 
       <template #end>
         <b-navbar-item tag="div">
           <nuxt-link
-            to="#"
+            :to="cta.href"
             class="button is-primary has-margin is-rounded"
           >
-            Enter
+            <IconLabel :icon="cta.icon">{{cta.name}}</IconLabel>
           </nuxt-link>
         </b-navbar-item>
       </template>
@@ -90,7 +76,7 @@
 </template>
 
 <script>
-import { contacts, links } from '~/snisni.config.json'
+import { contacts, links, navigation } from '~/snisni.config.json'
 
 import CoolLink from '~/components/molecoles/CoolLink'
 import IconLabel from '~/components/atoms/IconLabel'
@@ -120,7 +106,9 @@ export default {
         }
       ],
       links,
-      contacts
+      contacts,
+      pages: navigation.pages,
+      cta: navigation.cta
     }
   },
 }
