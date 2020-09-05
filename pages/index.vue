@@ -44,15 +44,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  mounted() {
-    this.$buefy.toast.open({
-      message: 'Welcome to the new <b>SNISNI</b>',
-      type: 'is-dark',
-      position: 'is-top'
-    })
-  }
-}
-</script>
