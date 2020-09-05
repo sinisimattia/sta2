@@ -1,7 +1,7 @@
 <template>
   <div id="mc_embed_signup">
     <form
-      action="https://snisni.us19.list-manage.com/subscribe/post?u=7386204a5c533adb88e626ea6&amp;id=63767efc0c"
+      :action="url"
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
@@ -38,7 +38,7 @@
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input
             type="text"
-            name="b_7386204a5c533adb88e626ea6_63767efc0c"
+            :name="code"
             tabindex="-1"
             value=""
           />
@@ -47,3 +47,16 @@
     </form>
   </div>
 </template>
+
+<script>
+import { newsletter } from '~/snisni.config.json'
+
+export default {
+  data(){
+    return {
+      link: newsletter.url,
+      code: newsletter.code,
+    }
+  }
+}
+</script>

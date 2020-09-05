@@ -19,6 +19,10 @@
   "links": {
     "privacy_policy": "#",
     "report_issues": "#"
+  },
+  "newsletter": {
+    "code": "#",
+    "url": "#"
   }
 
 }
