@@ -1,29 +1,37 @@
 {
   "navigation": {
     "cta": {
-      "name": "GitHub",
+      "name": "Card",
       "icon": {
-        "pack": "fab",
-        "name": "github"
+        "pack": "fas",
+        "name": "qrcode"
       },
-      "href": "#"
+      "href": "/#card"
     },
     "pages": [
       {
-        "name": "Chi Siamo",
+        "name": "Mission",
         "icon": {
-          "pack": "fab",
-          "name": "github"
+          "pack": "fas",
+          "name": "rocket"
         },
-        "href": "#us"
+        "href": "/#mission"
       },
       {
-        "name": "About",
+        "name": "Chi Siamo",
         "icon": {
-          "pack": "fab",
-          "name": "github"
+          "pack": "fas",
+          "name": "user-friends"
         },
-        "href": "#"
+        "href": "/#us"
+      },
+      {
+        "name": "Growth",
+        "icon": {
+          "pack": "fas",
+          "name": "seedling"
+        },
+        "href": "/#growth"
       }
     ]
   }
