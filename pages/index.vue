@@ -41,12 +41,12 @@
                     {{ section.snippet }}
                   </p>
                   <div class="is-content" v-if="section.content">
-                    <p
+                    <span
                       v-for="(paragraph, p) in section.content.paragraphs"
                       :key="p"
                     >
-                      {{ paragraph }}
-                    </p>
+                      <p v-if="paragraph">{{ paragraph }}</p>
+                    </span>
                   </div>
                 </div>
               </div>
