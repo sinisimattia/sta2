@@ -11,7 +11,7 @@
         <div class="container">
           <div class="section">
             <div class="columns is-vcentered">
-              <div class="column">
+              <div class="column" v-if="section.image">
                 <img :src="require(`~/assets/img/${section.image}`)" />
               </div>
               <div class="column">
