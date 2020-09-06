@@ -7,9 +7,9 @@
         <div class="hero-body container has-text-centered">
           <div>
             <h1 class="title is-0 glow is-light is-still">
-              <span>{{title}}</span>
+              <span>{{ title }}</span>
             </h1>
-            <h2 class="subtitle is-4">{{subtitle}}</h2>
+            <h2 class="subtitle is-4">{{ subtitle }}</h2>
           </div>
         </div>
       </div>
@@ -48,11 +48,11 @@
 import { identity } from '~/snisni.config.json'
 
 export default {
-  data(){
+  data() {
     return {
       title: identity.name,
-      subtitle: identity.slogan
+      subtitle: identity.slogan,
     }
-  }
+  },
 }
 </script>

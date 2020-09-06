@@ -3,7 +3,7 @@
     <b-navbar wrapper-class="container" class="sticky-top">
       <template #brand>
         <b-navbar-item tag="nuxt-link" :to="{ path: '/' }">
-          <p class="title">{{logo.alt}}</p>
+          <p class="title">{{ logo.alt }}</p>
         </b-navbar-item>
       </template>
 
@@ -15,7 +15,9 @@
           exact-active-class="has-text-primary"
           :to="page.href"
         >
-          <IconLabel :icon="page.icon.name" :pack="page.icon.pack">{{page.name}}</IconLabel>
+          <IconLabel :icon="page.icon.name" :pack="page.icon.pack">{{
+            page.name
+          }}</IconLabel>
         </b-navbar-item>
       </template>
 
@@ -25,7 +27,9 @@
             :to="cta.href"
             class="button is-primary has-margin is-rounded"
           >
-            <IconLabel :icon="cta.icon.name" :pack="cta.icon.pack">{{cta.name}}</IconLabel>
+            <IconLabel :icon="cta.icon.name" :pack="cta.icon.pack">{{
+              cta.name
+            }}</IconLabel>
           </nuxt-link>
         </b-navbar-item>
       </template>
@@ -58,8 +62,12 @@
           </aside>
 
           <aside class="column">
-            <CoolLink :to="links.privacy_policy" icon="lock">Privacy Policy</CoolLink>
-            <CoolLink :to="links.report_issues" icon="bug">Spotted a bug?</CoolLink>
+            <CoolLink :to="links.privacy_policy" icon="lock"
+              >Privacy Policy</CoolLink
+            >
+            <CoolLink :to="links.report_issues" icon="bug"
+              >Spotted a bug?</CoolLink
+            >
           </aside>
 
           <aside class="column">
@@ -68,7 +76,7 @@
         </section>
 
         <section class="has-text-centered">
-          <p>{{credit}}</p>
+          <p>{{ credit }}</p>
         </section>
       </div>
     </section>
@@ -97,13 +105,13 @@ export default {
         {
           title: 'Home',
           icon: 'home',
-          to: { name: 'index' }
+          to: { name: 'index' },
         },
         {
           title: 'Inspire',
           icon: 'lightbulb',
-          to: { name: 'inspire' }
-        }
+          to: { name: 'inspire' },
+        },
       ],
       links,
       contacts,

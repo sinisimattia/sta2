@@ -19,8 +19,8 @@ export default {
     icon: String,
     pack: {
       type: String,
-      default: 'fas'
-    }
-  }
+      default: 'fas',
+    },
+  },
 }
 </script>

@@ -10,9 +10,7 @@
       novalidate
     >
       <div id="mc_embed_signup_scroll">
-        <b-field
-          position="is-centered"
-        >
+        <b-field position="is-centered">
           <b-input
             type="email"
             placeholder="Our newsletter"
@@ -35,13 +33,8 @@
         </b-field>
 
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input
-            type="text"
-            :name="code"
-            tabindex="-1"
-            value=""
-          />
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
+          <input type="text" :name="code" tabindex="-1" value="" />
         </div>
       </div>
     </form>
@@ -52,11 +45,11 @@
 import { newsletter } from '~/snisni.config.json'
 
 export default {
-  data(){
+  data() {
     return {
       link: newsletter.url,
       code: newsletter.code,
     }
-  }
+  },
 }
 </script>

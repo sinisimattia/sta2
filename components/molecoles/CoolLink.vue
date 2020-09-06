@@ -25,20 +25,20 @@ import IconLabel from '~/components/atoms/IconLabel'
 
 export default {
   components: {
-    IconLabel
+    IconLabel,
   },
   extends: IconLabel,
   props: {
     to: String,
     internal: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
     component() {
       return this.internal && this.to ? 'nuxt-link' : 'a'
-    }
-  }
+    },
+  },
 }
 </script>

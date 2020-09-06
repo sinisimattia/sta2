@@ -23,7 +23,7 @@
 <script>
 export default {
   props: {
-    error: Object
-  }
+    error: Object,
+  },
 }
 </script>

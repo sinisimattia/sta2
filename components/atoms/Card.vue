@@ -30,12 +30,12 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     thumbnail: String,
     authorPic: String,
-    username: String
-  }
+    username: String,
+  },
 }
 </script>
 

@@ -17,7 +17,7 @@ import IconLabel from '~/components/atoms/IconLabel'
 export default {
   components: {
     Banner,
-    IconLabel
-  }
+    IconLabel,
+  },
 }
 </script>
