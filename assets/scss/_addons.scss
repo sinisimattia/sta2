@@ -54,6 +54,14 @@ body {
 .title {
   &.is-0 {
     font-size: 100px !important;
+
+    &-desktop {
+      @extend .title.is-0;
+
+      @media screen and (max-width: $desktop){
+        font-size: $size-1 !important;
+      }
+    }
   }
 }
 
