@@ -1,15 +1,26 @@
 {
   "sections": [
     {
+      "id": "mission",
       "title": "La nostra missione",
       "snippet": "In un mercato in continua evoluzione siamo in grado di correre con te per raggiungere i tuoi obiettivi.",
       "content": {
-        "paragraphs": [
-          "bla bla bla"
-        ]
+        "paragraphs": [""]
       },
       "type": "primary",
       "image": "illustrations/ideation.svg"
+    },
+    {
+      "id": "us",
+      "title": "Chi siamo",
+      "snippet": "Un team di professionisti che amano il loro lavoro e credono nell’Etica e nella Qualità.",
+      "content": {
+        "paragraphs": [
+          "Crediamo in un mercato libero dove vincono le idee intelligenti che siano utili alla società.",
+          "Abbiamo creato un Team di persone capaci di creare i progetti Smart."
+        ]
+      },
+      "image": "illustrations/team.svg"
     }
   ]
 }

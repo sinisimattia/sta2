@@ -23,12 +23,12 @@
     },
     "pages": [
       {
-        "name": "GitHub",
+        "name": "Chi Siamo",
         "icon": {
           "pack": "fab",
           "name": "github"
         },
-        "href": "#"
+        "href": "#us"
       },
       {
         "name": "About",
