@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <Sections :sections="sections" />
+      <SectionContainer :sections="sections" />
     </div>
   </div>
 </template>
@@ -29,11 +29,11 @@
 import { identity } from '~/snisni.config.json'
 import illustration from '~/assets/img/illustrations/work_together.svg'
 import { sections } from '~/config/home.json'
-import Sections from '@/components/organisms/Sections'
+import SectionContainer from '@/components/organisms/SectionContainer'
 
 export default {
   components: {
-    Sections
+    SectionContainer
   },
   data() {
     return {
