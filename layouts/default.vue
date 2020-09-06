@@ -84,7 +84,9 @@
 </template>
 
 <script>
-import { contacts, links, navigation, identity } from '~/snisni.config.json'
+import { links, identity } from '~/snisni.config.json'
+import { navigation } from '@/config/navigation.json'
+import { contacts } from '@/config/contacts.json'
 
 import CoolLink from '~/components/molecoles/CoolLink'
 import IconLabel from '~/components/atoms/IconLabel'
@@ -101,18 +103,6 @@ export default {
 
   data() {
     return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' },
-        },
-        {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' },
-        },
-      ],
       links,
       contacts,
       pages: navigation.pages,

@@ -1,0 +1,20 @@
+{
+  "contacts": [
+    {
+      "name": "GitHub",
+      "icon": {
+        "pack": "fab",
+        "name": "github"
+      },
+      "href": "#"
+    },
+    {
+      "name": "Contact Us",
+      "icon": {
+        "pack": "fas",
+        "name": "envelope"
+      },
+      "href": "#"
+    }
+  ]
+}

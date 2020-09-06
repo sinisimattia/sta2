@@ -12,51 +12,6 @@
     "banner": {},
     "footer": {}
   },
-  "navigation": {
-    "cta": {
-      "name": "GitHub",
-      "icon": {
-        "pack": "fab",
-        "name": "github"
-      },
-      "href": "#"
-    },
-    "pages": [
-      {
-        "name": "Chi Siamo",
-        "icon": {
-          "pack": "fab",
-          "name": "github"
-        },
-        "href": "#us"
-      },
-      {
-        "name": "About",
-        "icon": {
-          "pack": "fab",
-          "name": "github"
-        },
-        "href": "#"
-      }
-    ]
-  },
-  "contacts": [{
-      "name": "GitHub",
-      "icon": {
-        "pack": "fab",
-        "name": "github"
-      },
-      "href": "#"
-    },
-    {
-      "name": "Contact Us",
-      "icon": {
-        "pack": "fas",
-        "name": "envelope"
-      },
-      "href": "#"
-    }
-  ],
   "links": {
     "privacy_policy": "#",
     "report_issues": "#"

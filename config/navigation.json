@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "cta": {
+      "name": "GitHub",
+      "icon": {
+        "pack": "fab",
+        "name": "github"
+      },
+      "href": "#"
+    },
+    "pages": [
+      {
+        "name": "Chi Siamo",
+        "icon": {
+          "pack": "fab",
+          "name": "github"
+        },
+        "href": "#us"
+      },
+      {
+        "name": "About",
+        "icon": {
+          "pack": "fab",
+          "name": "github"
+        },
+        "href": "#"
+      }
+    ]
+  }
+}
