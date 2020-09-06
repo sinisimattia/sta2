@@ -20,30 +20,34 @@
         </div>
       </div>
 
-      <div class="has-background-primary">
-        <div class="container">
-          <div class="section">
-            <div class="tile is-ancestor">
-              <div class="tile is-parent is-vertical">
-                <div class="tile is-child notification is-info has-shadow">
-                  <p class="title is-1">Coming soon</p>
+      <div
+        class="hero"
+        v-for="(section, index) in sections"
+        :key="index"
+        :class="section.type ? `is-${section.type}` : null"
+      >
+        <div class="hero-body">
+          <div class="container">
+            <div class="section">
+              <div class="columns is-vcentered">
+                <div class="column">
+                  <img :src="require(`~/assets/img/${section.image}`)" />
                 </div>
-
-                <div class="tile is-child notification is-dark">
-                  <p>Sooner than you might think.</p>
-                </div>
-              </div>
-
-              <div class="tile is-parent">
-                <div class="tile is-child notification is-content">
-                  <p>But, for now. It remains empty</p>
-
-                  <p>
-                    This new release will be open, so anyone can create their
-                    own blog for free!
+                <div class="column">
+                  <p class="title is-1" v-if="section.title">
+                    {{ section.title }}
                   </p>
-
-                  <p>Please, be patient. I'm still working on it.</p>
+                  <p class="subtitle is-4" v-if="section.snippet">
+                    {{ section.snippet }}
+                  </p>
+                  <div class="is-content" v-if="section.content">
+                    <p
+                      v-for="(paragraph, p) in section.content.paragraphs"
+                      :key="p"
+                    >
+                      {{ paragraph }}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -57,6 +61,7 @@
 <script>
 import { identity } from '~/snisni.config.json'
 import illustration from '~/assets/img/illustrations/work_together.svg'
+import { sections } from '~/config/home.json'
 
 export default {
   data() {
@@ -64,6 +69,7 @@ export default {
       title: identity.name,
       subtitle: identity.slogan,
       banner_illustration: illustration,
+      sections: sections,
     }
   },
 }

@@ -1,0 +1,15 @@
+{
+  "sections": [
+    {
+      "title": "La nostra missione",
+      "snippet": "In un mercato in continua evoluzione siamo in grado di correre con te per raggiungere i tuoi obiettivi.",
+      "content": {
+        "paragraphs": [
+          "bla bla bla"
+        ]
+      },
+      "type": "primary",
+      "image": "illustrations/ideation.svg"
+    }
+  ]
+}
