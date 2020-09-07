@@ -28,12 +28,14 @@
       "title": "Growth Hacking",
       "snippet": "La soluzione per rendere efficace la comunicazione.",
       "type": "dark",
+      "reversed": true,
       "content": {
         "paragraphs": [
           "Un processo di rapida sperimentazione attraverso una serie di canali di marketing per individuare i modi più efficaci per far crescere un business.",
           "La scelta di linguaggi appropriati in base allo strumento utilizzato con una strategia di Marketing studiata ad Hoc."
         ]
-      }
+      },
+      "image": "illustrations/growing.svg"
     }
   ]
 }
