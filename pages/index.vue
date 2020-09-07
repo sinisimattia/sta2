@@ -20,7 +20,8 @@
         </div>
       </div>
 
-      <SectionContainer :sections="sections" />
+      <SectionContainer :sections="mainSections"/>
+      <SectionContainer :sections="cardSections" columns/>
     </div>
   </div>
 </template>
@@ -28,7 +29,8 @@
 <script>
 import { identity } from '~/snisni.config.json'
 import illustration from '~/assets/img/illustrations/work_together.svg'
-import { sections } from '~/config/home.json'
+import { sections as mainSections } from '~/config/home.json'
+import { sections as cardSections } from '~/config/card.json'
 import SectionContainer from '@/components/organisms/SectionContainer'
 
 export default {
@@ -40,7 +42,8 @@ export default {
       title: identity.name,
       subtitle: identity.slogan,
       banner_illustration: illustration,
-      sections: sections,
+      mainSections: mainSections,
+      cardSections: cardSections,
     }
   },
 }
