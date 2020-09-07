@@ -1,4 +1,5 @@
 require('dotenv').config()
+const { identity } = require('./snisni.config.json')
 
 module.exports = {
   mode: 'universal',
@@ -6,7 +7,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: process.env.APP_NAME,
+    title: identity.name,
     meta: [
       {
         charset: 'utf-8',
@@ -18,7 +19,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: identity.slogan || process.env.npm_package_description,
       },
     ],
     link: [
