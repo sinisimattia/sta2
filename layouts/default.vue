@@ -3,7 +3,7 @@
     <b-navbar wrapper-class="container" class="sticky-top">
       <template #brand>
         <b-navbar-item tag="nuxt-link" :to="{ path: '/' }">
-          <img v-if="logo.image" :src="require(logo.image)" />
+          <img v-if="logo.image" :src="logo.image" />
           <p v-else class="title">{{ logo.alt }}</p>
         </b-navbar-item>
       </template>
