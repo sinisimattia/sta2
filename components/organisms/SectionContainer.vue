@@ -1,16 +1,10 @@
 <template>
   <div>
-    <div
-      class="hero"
+    <Section
+      :section="section"
       v-for="(section, index) in sections"
       :key="index"
-      :class="section.type ? `is-${section.type}` : null"
-      :id="section.id"
-    >
-      <div class="hero-body">
-        <Section :section="section"/>
-      </div>
-    </div>
+    />
   </div>
 </template>
 
@@ -19,7 +13,7 @@ import Section from '@/components/molecoles/Section'
 
 export default {
   components: {
-    Section
+    Section,
   },
   props: {
     sections: {
