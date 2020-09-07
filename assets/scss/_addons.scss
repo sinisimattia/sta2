@@ -112,3 +112,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
+
+.columns.is-reversed {
+  flex-direction: row-reverse;
+}
