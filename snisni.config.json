@@ -6,6 +6,10 @@
       "image": "",
       "alt": "/"
     },
+    "icon": {
+      "src": "Etiqard.png",
+      "type": "image/png"
+    },
     "credit": "Built with 🧡 by Mattia Sinisi for ETIQA GROUP"
   },
   "components": {
