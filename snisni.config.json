@@ -3,7 +3,7 @@
     "name": "ETIQA GROUP",
     "slogan": "Professionisti della comunicazione",
     "logo": {
-      "image": "#",
+      "image": "",
       "alt": "/"
     },
     "credit": "Built with 🧡 by Mattia Sinisi for ETIQA GROUP"
@@ -13,12 +13,12 @@
     "footer": {}
   },
   "links": {
-    "privacy_policy": "#",
-    "report_issues": "#"
+    "privacy_policy": "",
+    "report_issues": ""
   },
   "newsletter": {
-    "code": "#",
-    "url": "#"
+    "code": "",
+    "url": ""
   }
 
 }

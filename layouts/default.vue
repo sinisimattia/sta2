@@ -3,7 +3,8 @@
     <b-navbar wrapper-class="container" class="sticky-top">
       <template #brand>
         <b-navbar-item tag="nuxt-link" :to="{ path: '/' }">
-          <p class="title">{{ logo.alt }}</p>
+          <img v-if="logo.image" :src="require(logo.image)" />
+          <p v-else class="title">{{ logo.alt }}</p>
         </b-navbar-item>
       </template>
 
@@ -44,7 +45,7 @@
     <section class="footer">
       <div class="container">
         <section class="columns is-vcentered">
-          <aside class="column is-two-thirds">
+          <aside class="column is-two-thirds" v-if="links.newsletter">
             <p class="title has-text-centered is-2">Never miss an update!</p>
             <NewsletterForm />
             <p class="subtitle has-text-centered">Don't worry, we hate spam.</p>
