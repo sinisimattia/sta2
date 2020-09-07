@@ -9,7 +9,7 @@
         <div class="section">
           <div class="columns is-vcentered" :class="{ 'is-reversed': reversed || section.reversed }">
             <div class="column" v-if="section.image">
-              <img :src="require(`~/assets/img/${section.image}`)" />
+              <img :src="require(`~/assets/img/${section.image}`)" alt/>
             </div>
             <div class="column">
               <p class="title is-1" v-if="section.title">
