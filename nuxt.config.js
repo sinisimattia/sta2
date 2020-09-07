@@ -64,6 +64,8 @@ module.exports = {
     '@nuxtjs/style-resources',
     // Doc: https://www.npmjs.com/package/nuxt-fontawesome
     'nuxt-fontawesome',
+    // Doc: https://www.npmjs.com/package/@nuxtjs/svg
+    '@nuxtjs/svg',
   ],
   /**
    * Buefy module configuration

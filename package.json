@@ -23,6 +23,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/svg": "^0.1.12",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "nuxt": "^2.14.4",
