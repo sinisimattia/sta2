@@ -20,9 +20,9 @@
         </div>
       </div>
 
-      <SectionContainer :sections="mainSections"/>
-      <SectionContainer :sections="cardSections" columns/>
-      <SectionContainer :sections="softwareSections" columns/>
+      <SectionContainer v-if="mainSections" :sections="mainSections"/>
+      <SectionContainer v-if="cardSections" :sections="cardSections" columns/>
+      <SectionContainer v-if="softwareSections" :sections="softwareSections" columns/>
     </div>
   </div>
 </template>
