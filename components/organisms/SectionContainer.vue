@@ -1,12 +1,12 @@
 <template>
-  <div :class="{ columns: columns }" class="is-vcentered">
-    <div :class="{ columns: columns }">
-      <Section
-        :section="section"
-        v-for="(section, index) in sections"
-        :key="index"
-      />
-    </div>
+  <div :class="{ columns: columns }" class="is-gapless is-vcentered is-widescreen-only">
+    <Section
+      :class="{ column: columns }"
+      :section="section"
+      v-for="(section, index) in sections"
+      :key="index"
+      class="is-fullheight"
+    />
   </div>
 </template>
 
