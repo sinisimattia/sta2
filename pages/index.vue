@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="intersection">
+    <div>
       <div class="hero is-large">
         <div class="hero-body">
           <div class="container section">
