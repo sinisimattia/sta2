@@ -1,19 +1,25 @@
 {
   "sections": [
     {
-      "id": "card",
+      "type": "primary",
       "title": "Card",
-      "snippet": "Il porta-card innovativo",
-      "content": {
-        "paragraphs": [
-          "Il nuovo porta-card brevettato che protegge i dati sensibili e ti permette di entrare nell'era dei social attraverso un codice QR, creando un progetto in linea con la Green Economy",
-          "Un gadget utile che tiene in considerazione la sicurezza dei dati.",
-          "La grafica personalizzata e il dispositivo digitale permettono di fidelizzare creando un filo diretto tra fornitore e utente.",
-          "Uno strumento di Mobile Marketing a grande diffusione, grazie all'immagine bidimensionale permette il collegamento immediato al web.",
-          "Una piattaforma software unica che permette di variare la Url di atterraggio del QRcode, cosi da inviare i propri utenti sui vari social esistenti oppure sulla propria pagina internet aziendale, nello stesso tempo visualizzare il numero di accessi e la geolocalizzazione senza entrare nella privacy dell'utente.",
-          "Su ETIQARD l'innovativo porta card digitale è possibile inserire il dispositivo digi- tale NFC che consente a differenza dell'Rfid una comunicazione bidirezionale."
-        ]
-      }
+      "snippet": "Il nuovo porta-card brevettato che protegge i dati sensibili e ti permette di entrare nell'era dei social attraverso un codice QR, creando un progetto in linea con la Green Economy"
+
+    },
+    {
+      "type": "warning",
+      "title": "Card",
+      "snippet": "Un gadget utile che tiene in considerazione la sicurezza dei dati."
+    },
+    {
+      "type": "success",
+      "title": "Card",
+      "snippet": "Uno strumento di Mobile Marketing a grande diffusione, grazie all'immagine bidimensionale permette il collegamento immediato al web."
+    },
+    {
+      "type": "dark",
+      "title": "Card",
+      "snippet": "Su ETIQARD l'innovativo porta card digitale è possibile inserire il dispositivo digitale NFC che consente a differenza dell'Rfid una comunicazione bidirezionale."
     }
   ]
 }

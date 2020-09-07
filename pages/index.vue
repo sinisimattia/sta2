@@ -22,6 +22,7 @@
 
       <SectionContainer :sections="mainSections"/>
       <SectionContainer :sections="cardSections" columns/>
+      <SectionContainer :sections="softwareSections" columns/>
     </div>
   </div>
 </template>
@@ -31,6 +32,7 @@ import { identity } from '~/snisni.config.json'
 import illustration from '~/assets/img/illustrations/work_together.svg'
 import { sections as mainSections } from '~/config/home.json'
 import { sections as cardSections } from '~/config/card.json'
+import { sections as softwareSections } from '~/config/software.json'
 import SectionContainer from '@/components/organisms/SectionContainer'
 
 export default {
@@ -44,6 +46,7 @@ export default {
       banner_illustration: illustration,
       mainSections: mainSections,
       cardSections: cardSections,
+      softwareSections: softwareSections,
     }
   },
 }

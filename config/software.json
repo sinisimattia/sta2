@@ -1,0 +1,14 @@
+{
+  "sections": [
+    {
+      "type": "info",
+      "title": "Card",
+      "snippet": "La grafica personalizzata e il dispositivo digitale permettono di fidelizzare creando un filo diretto tra fornitore e utente."
+    },
+    {
+      "type": "danger",
+      "title": "Card",
+      "snippet": "Una piattaforma software unica che permette di variare la Url di atterraggio del QRcode, cosi da inviare i propri utenti sui vari social esistenti oppure sulla propria pagina internet aziendale, nello stesso tempo visualizzare il numero di accessi e la geolocalizzazione senza entrare nella privacy dell'utente."
+    }
+  ]
+}
