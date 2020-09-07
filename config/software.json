@@ -1,12 +1,20 @@
 {
   "sections": [
     {
-      "type": "info",
+      "type": "dark",
+      "horizontal": false,
+      "image": "illustrations/personalize.svg",
       "snippet": "La grafica personalizzata e il dispositivo digitale permettono di fidelizzare creando un filo diretto tra fornitore e utente."
     },
     {
-      "type": "danger",
-      "snippet": "Una piattaforma software unica che permette di variare la Url di atterraggio del QRcode, cosi da inviare i propri utenti sui vari social esistenti oppure sulla propria pagina internet aziendale, nello stesso tempo visualizzare il numero di accessi e la geolocalizzazione senza entrare nella privacy dell'utente."
+      "horizontal": false,
+      "image": "illustrations/social.svg",
+      "snippet": "Una unica che permette di variare l'URL di atterraggio del QRcode, cosi da inviare i propri utenti sui vari social esistenti oppure sulla propria landing page",
+      "content": {
+        "paragraphs": [
+          "Ti offriamo la possibilità di visualizzare il numero di accessi e la geolocalizzazione senza entrare nella privacy dell'utente."
+        ]
+      }
     }
   ]
 }
