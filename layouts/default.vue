@@ -75,8 +75,8 @@
           </aside>
         </section>
 
-        <section class="has-text-centered">
-          <p>{{ credit }}</p>
+        <section class="section has-text-centered">
+          <span>{{ credit }}</span>
         </section>
       </div>
     </section>
