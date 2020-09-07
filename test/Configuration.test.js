@@ -1,4 +1,4 @@
-import { identity } from '~/snisni.config.json'
+import { identity, links } from '~/snisni.config.json'
 
 test('identity configuration set', () => {
   expect(identity.name).toBeDefined()
