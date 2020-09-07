@@ -7,7 +7,7 @@
     <div class="hero-body">
       <div class="container">
         <div class="section">
-          <div class="columns is-vcentered" :class="{ 'is-reversed': reversed || section.reversed }">
+          <div class="is-vcentered" :class="{ columns: isHorizontal,'is-reversed': reversed || section.reversed }">
             <div class="column" v-if="section.image">
               <img :src="require(`~/assets/img/${section.image}`)" alt/>
             </div>
@@ -44,7 +44,16 @@ export default {
     reversed: {
       type: Boolean,
       default: false
+    },
+    horizontal: {
+      type: Boolean,
+      default: true
     }
   },
+  computed: {
+    isHorizontal(){
+      return this.section.horizontal === false || this.section.horizontal === true ? this.section.horizontal : this.horizontal
+    }
+  }
 }
 </script>
