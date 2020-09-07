@@ -22,7 +22,7 @@
 
           <p class="control">
             <b-button
-              type="is-info"
+              type="is-link"
               native-type="submit"
               name="subscribe"
               id="mc-embedded-subscribe"
