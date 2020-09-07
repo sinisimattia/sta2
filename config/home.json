@@ -2,6 +2,7 @@
   "sections": [
     {
       "id": "mission",
+      "reversed": true,
       "title": "La nostra missione",
       "snippet": "In un mercato in continua evoluzione siamo in grado di correre con te per raggiungere i tuoi obiettivi.",
       "content": {
