@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{ 'columns section-column': columns }"
-    class="is-gapless is-vcentered is-widescreen-only is-marginless"
+    class="is-gapless is-vcentered is-marginless"
   >
     <Section
       :class="{ column: columns }"
@@ -34,7 +34,6 @@ export default {
 
 <style scoped>
 .columns.section-column {
-  display: flex;
   flex-direction: row;
   align-items: stretch;
 }
