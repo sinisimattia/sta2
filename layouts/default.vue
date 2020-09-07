@@ -43,13 +43,13 @@
 
     <section class="footer">
       <div class="container">
-        <section class="section">
-          <p class="title has-text-centered is-2">Never miss an update!</p>
-          <NewsletterForm />
-          <p class="subtitle has-text-centered">Don't worry, we hate spam.</p>
-        </section>
+        <section class="columns is-vcentered">
+          <aside class="column is-two-thirds">
+            <p class="title has-text-centered is-2">Never miss an update!</p>
+            <NewsletterForm />
+            <p class="subtitle has-text-centered">Don't worry, we hate spam.</p>
+          </aside>
 
-        <section class="columns">
           <aside class="column">
             <CoolLink
               v-for="link in contacts"
@@ -68,10 +68,6 @@
             <CoolLink :to="links.report_issues" icon="bug"
               >Spotted a bug?</CoolLink
             >
-          </aside>
-
-          <aside class="column">
-            <BuyMeACoffee />
           </aside>
         </section>
 
