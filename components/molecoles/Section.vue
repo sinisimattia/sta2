@@ -7,7 +7,7 @@
     <div class="hero-body">
       <div class="container">
         <div class="section">
-          <div class="columns is-vcentered">
+          <div class="columns is-vcentered" :class="{ 'is-reversed': reversed || section.reversed }">
             <div class="column" v-if="section.image">
               <img :src="require(`~/assets/img/${section.image}`)" />
             </div>
@@ -41,6 +41,10 @@ export default {
       type: Object,
       required: true,
     },
+    reversed: {
+      type: Boolean,
+      default: false
+    }
   },
 }
 </script>
