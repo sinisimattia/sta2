@@ -20,9 +20,20 @@
         </div>
       </div>
 
-      <SectionContainer v-if="mainSections" :sections="mainSections"/>
-      <SectionContainer v-if="cardSections" :sections="cardSections" columns/>
-      <SectionContainer v-if="softwareSections" :sections="softwareSections" columns/>
+      <SectionContainer v-if="mainSections" :sections="mainSections" />
+
+      <div id="card">
+        <SectionContainer
+          v-if="cardSections"
+          :sections="cardSections"
+          columns
+        />
+        <SectionContainer
+          v-if="softwareSections"
+          :sections="softwareSections"
+          columns
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -36,7 +47,7 @@ import SectionContainer from '@/components/organisms/SectionContainer'
 
 export default {
   components: {
-    SectionContainer
+    SectionContainer,
   },
   data() {
     return {
