@@ -1,11 +1,13 @@
 <template>
-  <div :class="{ columns: columns }" class="is-gapless is-vcentered is-widescreen-only">
+  <div
+    :class="{ 'columns section-column': columns }"
+    class="is-gapless is-vcentered is-widescreen-only is-marginless"
+  >
     <Section
       :class="{ column: columns }"
       :section="section"
       v-for="(section, index) in sections"
       :key="index"
-      class="is-fullheight"
     />
   </div>
 </template>
@@ -29,3 +31,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.columns.section-column {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+</style>
