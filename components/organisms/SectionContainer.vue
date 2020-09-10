@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span v-if="title" class="title is-1 has-text-centered is-block is-wide is-marginless section">{{title}}</span>
+    <span v-if="title" class="title is-0-desktop has-text-centered is-block is-wide is-marginless section">{{title}}</span>
     <div
       :class="{ 'columns section-column': columns }"
       class="is-gapless is-vcentered is-marginless"

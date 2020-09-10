@@ -12,17 +12,21 @@
             </div>
 
             <div class="column">
-              <p class="title is-1" v-if="section.title">{{ section.title }}</p>
+              <p class="title is-2" v-if="section.title">{{ section.title }}</p>
               <p class="subtitle is-4" v-if="section.snippet">{{ section.snippet }}</p>
 
-              <div v-if="section.links">
+              <div v-if="section.links" class="columns is-vcentered is-centered">
                 <CoolLink
+                  class="column"
                   v-for="link in section.links"
                   :key="link.href"
                   :to="link.href"
                   :icon="link.icon.name"
                   :pack="link.icon.pack"
-                >{{ link.name }}</CoolLink>
+                  :size="3"
+                >
+                  {{link.name}}
+                </CoolLink>
               </div>
 
               <div class="is-content" v-if="section.content">
