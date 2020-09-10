@@ -2,12 +2,11 @@
     "title": "Un magazine che parla di etica.",
     "sections": [
         {
-            "type": "primary",
             "horizontal": false,
             "snippet": "Siamo esclusivisti in pubblicità per il Primo Magazine italiano che parla di Etica e Buona educazione. Nasce dalla Pagina Sii come Bill",
             "links": [
                 {
-                    "name": "Pagina Facebook",
+                    "name": "Facebook",
                     "icon": {
                         "pack": "fab",
                         "name": "facebook"
@@ -15,7 +14,7 @@
                     "href": "https://www.facebook.com/siicomebill/"
                 },
                 {
-                    "name": "Pagina Instagram",
+                    "name": "Instagram",
                     "icon": {
                         "pack": "fab",
                         "name": "instagram"
@@ -32,7 +31,6 @@
             }
         },
         {
-            "type": "primary",
             "horizontal": false,
             "snippet": "Bill è il mito da imitare, l’eroe che ragiona e conta sempre fino a 10 prima di esprimersi o di apparire sui social.",
             "content": {
@@ -43,9 +41,8 @@
             }
         },
         {
-            "type": "primary",
             "horizontal": false,
-            "snippet": "Bill diventa magazine.",
+            "title": "Bill diventa magazine.",
             "content": {
                 "paragraphs": [
                     "Preso come esempio in qualità di caso studio su libri di testo e Università, a settembre diventa un Magazine con la direzione di Monica Landro, giornalista e discografica."
