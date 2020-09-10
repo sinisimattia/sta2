@@ -56,17 +56,14 @@
               :to="link.href"
               :icon="link.icon.name"
               :pack="link.icon.pack"
-              >{{ link.name }}</CoolLink
-            >
+              >
+                {{ link.name }}
+              </CoolLink>
           </aside>
 
           <aside class="column">
-            <CoolLink :to="links.privacy_policy" icon="lock"
-              >Privacy Policy</CoolLink
-            >
-            <CoolLink :to="links.report_issues" icon="bug"
-              >Spotted a bug?</CoolLink
-            >
+            <CoolLink :to="links.privacy_policy" icon="lock">Privacy Policy</CoolLink>
+            <CoolLink :to="links.report_issues" icon="bug">Report Bugs</CoolLink>
           </aside>
         </section>
 

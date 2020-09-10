@@ -1,7 +1,7 @@
 {
   "contacts": [
     {
-      "name": "GitHub",
+      "name": "Vedi su GitHub",
       "icon": {
         "pack": "fab",
         "name": "github"
@@ -9,12 +9,12 @@
       "href": "https://github.com/sinisimattia/etiqa-website"
     },
     {
-      "name": "Contact Us",
+      "name": "Contattaci",
       "icon": {
         "pack": "fas",
         "name": "envelope"
       },
-      "href": "#"
+      "href": "mailto:info@etiqagroup.it"
     }
   ]
 }
