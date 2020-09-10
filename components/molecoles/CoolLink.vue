@@ -1,23 +1,11 @@
 <template>
-  <div class="level">
-    <div class="level-left">
-      <div class="level-item">
-        <component
-          :is="component"
-          class="is-block"
-          :to="to"
-          :href="to"
-          noopener
-        >
-          <span class="has-text-centered">
-            <IconLabel :pack="pack" :icon="icon" :size="size">
-              <slot></slot>
-            </IconLabel>
-          </span>
-        </component>
-      </div>
-    </div>
-  </div>
+  <component :is="component" class="is-block" :to="to" :href="to" noopener>
+    <span class="has-text-centered">
+      <IconLabel :pack="pack" :icon="icon" :size="size">
+        <slot></slot>
+      </IconLabel>
+    </span>
+  </component>
 </template>
 
 <script>
