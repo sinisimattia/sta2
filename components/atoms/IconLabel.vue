@@ -1,5 +1,5 @@
 <template>
-  <div class="level">
+  <div class="level" :class="{'is-mobile': fixed}">
     <div class="level-left">
       <div class="level-item">
         <fa v-if="icon" :icon="[pack, icon]" :class="`fa-${size}x`"></fa>
@@ -25,6 +25,10 @@ export default {
     size: {
       type: Number,
       default: 1,
+    },
+    fixed: {
+      type: Boolean,
+      default: true,
     },
   },
 }

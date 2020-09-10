@@ -1,7 +1,7 @@
 <template>
   <component :is="component" class="is-block" :to="to" :href="to" noopener>
     <span class="has-text-centered">
-      <IconLabel :pack="pack" :icon="icon" :size="size">
+      <IconLabel :pack="pack" :icon="icon" :size="size" :fixed="fixed">
         <slot></slot>
       </IconLabel>
     </span>
