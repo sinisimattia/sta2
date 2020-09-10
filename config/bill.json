@@ -2,6 +2,7 @@
     "title": "Un magazine che parla di etica.",
     "sections": [
         {
+            "id": "magazine",
             "horizontal": false,
             "snippet": "Siamo esclusivisti in pubblicità per il Primo Magazine italiano che parla di Etica e Buona educazione. Nasce dalla Pagina Sii come Bill",
             "links": [

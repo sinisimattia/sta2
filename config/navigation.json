@@ -32,6 +32,14 @@
           "name": "seedling"
         },
         "href": "/#growth"
+      },
+      {
+        "name": "Bill's Magazine",
+        "icon": {
+          "pack": "fas",
+          "name": "newspaper"
+        },
+        "href": "/#magazine"
       }
     ]
   }
