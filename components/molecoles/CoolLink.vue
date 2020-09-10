@@ -10,7 +10,7 @@
           noopener
         >
           <span class="has-text-centered">
-            <IconLabel :pack="pack" :icon="icon">
+            <IconLabel :pack="pack" :icon="icon" :size="size">
               <slot></slot>
             </IconLabel>
           </span>

@@ -3,7 +3,7 @@
     <div class="level-left">
       <div class="level-item">
         <span class="has-text-centered">
-          <fa v-if="icon" :icon="[pack, icon]"></fa>
+          <fa v-if="icon" :icon="[pack, icon]" :class="`fa-${size}x`"></fa>
           <span>
             <slot></slot>
           </span>
@@ -21,6 +21,10 @@ export default {
       type: String,
       default: 'fas',
     },
+    size: {
+      type: Number,
+      default: 1
+    }
   },
 }
 </script>
