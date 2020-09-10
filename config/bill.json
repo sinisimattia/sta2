@@ -1,0 +1,56 @@
+{
+    "title": "Un magazine che parla di etica.",
+    "sections": [
+        {
+            "type": "primary",
+            "horizontal": false,
+            "snippet": "Siamo esclusivisti in pubblicità per il Primo Magazine italiano che parla di Etica e Buona educazione. Nasce dalla Pagina Sii come Bill",
+            "links": [
+                {
+                    "name": "Pagina Facebook",
+                    "icon": {
+                        "pack": "fas",
+                        "name": "envelope"
+                    },
+                    "href": "mailto:info@etiqagroup.it"
+                },
+                {
+                    "name": "Pagina Instagram",
+                    "icon": {
+                        "pack": "fas",
+                        "name": "envelope"
+                    },
+                    "href": "mailto:info@etiqagroup.it"
+                }
+            ],
+            "content": {
+                "paragraphs": [
+                    "Nell’immaginario collettivo attuale, Bill (insieme agli altri personaggi del suo mondo) è un’iconografia simbolica virtuale, in grado di veicolare messaggi virtuosi destinati a giovani e adulti.",
+                    "Utilizza due principali social media in Italia: Facebook ed Instagram.",
+                    "Oltre 1.300.000 followers."
+                ]
+            }
+        },
+        {
+            "type": "primary",
+            "horizontal": false,
+            "snippet": "Bill è il mito da imitare, l’eroe che ragiona e conta sempre fino a 10 prima di esprimersi o di apparire sui social.",
+            "content": {
+                "paragraphs": [
+                    "Essendo uno stickman, non presenta nessuna peculiarità estetica come essere umano, quindi permette a tutti di potersi identificare in lui.",
+                    "Un modello di bon ton 2.0 per tutti che assume valenze educative e positive per chi voglia vivere in una società civile, senza alcuna imposizione."
+                ]
+            }
+        },
+        {
+            "type": "primary",
+            "horizontal": false,
+            "snippet": "Bill diventa magazine.",
+            "content": {
+                "paragraphs": [
+                    "Preso come esempio in qualità di caso studio su libri di testo e Università, a settembre diventa un Magazine con la direzione di Monica Landro, giornalista e discografica."
+                ]
+            }
+        }
+    ]
+}

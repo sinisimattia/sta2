@@ -36,6 +36,13 @@
           :sections="softwareSections.sections"
           columns
         />
+
+        <SectionContainer
+          v-if="billSections"
+          :title="billSections.title"
+          :sections="billSections.sections"
+          columns
+        />
       </div>
     </div>
   </div>
@@ -46,6 +53,7 @@ import { identity } from '~/snisni.config.json'
 import mainSections from '~/config/home.json'
 import cardSections from '~/config/card.json'
 import softwareSections  from '~/config/software.json'
+import billSections from '~/config/bill.json'
 import SectionContainer from '@/components/organisms/SectionContainer'
 
 export default {
@@ -56,9 +64,10 @@ export default {
     return {
       title: identity.name,
       subtitle: identity.slogan,
-      mainSections: mainSections,
-      cardSections: cardSections,
-      softwareSections: softwareSections,
+      mainSections,
+      cardSections,
+      softwareSections,
+      billSections,
     }
   },
 }
