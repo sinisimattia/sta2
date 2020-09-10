@@ -2,11 +2,12 @@
   <div class="level">
     <div class="level-left">
       <div class="level-item">
-        <span class="has-text-centered">
-          <fa v-if="icon" :icon="[pack, icon]" :class="`fa-${size}x`"></fa>
-          <span>
-            <slot></slot>
-          </span>
+        <fa v-if="icon" :icon="[pack, icon]" :class="`fa-${size}x`"></fa>
+      </div>
+
+      <div class="level-item">
+        <span>
+          <slot></slot>
         </span>
       </div>
     </div>
@@ -23,8 +24,8 @@ export default {
     },
     size: {
       type: Number,
-      default: 1
-    }
+      default: 1,
+    },
   },
 }
 </script>
