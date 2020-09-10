@@ -51,6 +51,7 @@
 
           <aside class="column">
             <CoolLink
+              class="has-padding"
               v-for="link in contacts"
               :key="link.href"
               :to="link.href"
@@ -62,8 +63,8 @@
           </aside>
 
           <aside class="column">
-            <CoolLink :to="links.privacy_policy" icon="lock">Privacy Policy</CoolLink>
-            <CoolLink :to="links.report_issues" icon="bug">Report Bugs</CoolLink>
+            <CoolLink :to="links.privacy_policy" icon="lock" class="has-padding">Privacy Policy</CoolLink>
+            <CoolLink :to="links.report_issues" icon="bug" class="has-padding">Report Bugs</CoolLink>
           </aside>
         </section>
 
