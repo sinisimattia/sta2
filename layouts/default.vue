@@ -43,7 +43,7 @@
     </section>
 
     <section class="footer">
-      <div class="container">
+      <div class="container section">
         <section class="columns is-vcentered">
           <aside class="column is-two-thirds" v-if="newsletter">
             <NewsletterForm :code="newsletter.code" :link="newsletter.link"/>
