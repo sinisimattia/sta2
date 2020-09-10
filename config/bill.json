@@ -9,18 +9,18 @@
                 {
                     "name": "Pagina Facebook",
                     "icon": {
-                        "pack": "fas",
-                        "name": "envelope"
+                        "pack": "fab",
+                        "name": "facebook"
                     },
-                    "href": "mailto:info@etiqagroup.it"
+                    "href": "https://www.facebook.com/siicomebill/"
                 },
                 {
                     "name": "Pagina Instagram",
                     "icon": {
-                        "pack": "fas",
-                        "name": "envelope"
+                        "pack": "fab",
+                        "name": "instagram"
                     },
-                    "href": "mailto:info@etiqagroup.it"
+                    "href": "https://www.instagram.com/siicomebill/?hl=it"
                 }
             ],
             "content": {
