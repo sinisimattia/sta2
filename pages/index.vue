@@ -20,17 +20,20 @@
         </div>
       </div>
 
-      <SectionContainer v-if="mainSections" :sections="mainSections" />
+      <SectionContainer v-if="mainSections" :sections="mainSections.sections" :title="mainSections.title"/>
 
       <div id="card">
         <SectionContainer
           v-if="cardSections"
-          :sections="cardSections"
+          :title="cardSections.title"
+          :sections="cardSections.sections"
           columns
         />
+
         <SectionContainer
           v-if="softwareSections"
-          :sections="softwareSections"
+          :title="softwareSections.title"
+          :sections="softwareSections.sections"
           columns
         />
       </div>
@@ -40,9 +43,9 @@
 
 <script>
 import { identity } from '~/snisni.config.json'
-import { sections as mainSections } from '~/config/home.json'
-import { sections as cardSections } from '~/config/card.json'
-import { sections as softwareSections } from '~/config/software.json'
+import mainSections from '~/config/home.json'
+import cardSections from '~/config/card.json'
+import softwareSections  from '~/config/software.json'
 import SectionContainer from '@/components/organisms/SectionContainer'
 
 export default {

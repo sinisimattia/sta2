@@ -1,14 +1,17 @@
 <template>
-  <div
-    :class="{ 'columns section-column': columns }"
-    class="is-gapless is-vcentered is-marginless"
-  >
-    <Section
-      :class="{ column: columns }"
-      :section="section"
-      v-for="(section, index) in sections"
-      :key="index"
-    />
+  <div>
+    <span v-if="title" class="title is-1 has-text-centered is-block is-wide is-marginless section">{{title}}</span>
+    <div
+      :class="{ 'columns section-column': columns }"
+      class="is-gapless is-vcentered is-marginless"
+    >
+      <Section
+        :class="{ column: columns }"
+        :section="section"
+        v-for="(section, index) in sections"
+        :key="index"
+      />
+    </div>
   </div>
 </template>
 
@@ -20,6 +23,9 @@ export default {
     Section,
   },
   props: {
+    title: {
+      type: String,
+    },
     sections: {
       type: Array,
       required: true,
