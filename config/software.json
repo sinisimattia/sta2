@@ -9,10 +9,10 @@
     {
       "horizontal": false,
       "image": "illustrations/social.svg",
-      "snippet": "Una unica che permette di variare l'URL di atterraggio del QRcode, cosi da inviare i propri utenti sui vari social esistenti oppure sulla propria landing page",
+      "snippet": "Una piattaforma unica che permette di variare l'URL di atterraggio del QRcode, cosi da inviare i propri utenti sui vari social esistenti oppure sulla propria landing page",
       "content": {
         "paragraphs": [
-          "Ti offriamo la possibilità di visualizzare il numero di accessi e la geolocalizzazione senza entrare nella privacy dell'utente."
+          "Ti offriamo la possibilità di visualizzare il numero di accessi e la geolocalizzazione senza invadere la privacy dell'utente."
         ]
       }
     }
