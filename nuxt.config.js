@@ -3,6 +3,7 @@ const { identity } = require('./snisni.config.json')
 
 module.exports = {
   mode: 'universal',
+  telemetry: false,
   /*
    ** Headers of the page
    */
