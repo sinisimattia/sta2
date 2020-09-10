@@ -1,28 +1,32 @@
 <template>
-  <div
-    class="hero"
-    :class="section.type ? `is-${section.type}` : null"
-    :id="section.id"
-  >
+  <div class="hero" :class="section.type ? `is-${section.type}` : null" :id="section.id">
     <div class="hero-body">
       <div class="container">
         <div class="section">
-          <div class="is-vcentered" :class="{ columns: isHorizontal,'is-reversed': reversed || section.reversed }">
+          <div
+            class="is-vcentered"
+            :class="{ columns: isHorizontal,'is-reversed': reversed || section.reversed }"
+          >
             <div class="column" v-if="section.image">
-              <img :src="require(`~/assets/img/${section.image}`)" alt/>
+              <img :src="require(`~/assets/img/${section.image}`)" alt />
             </div>
+
             <div class="column">
-              <p class="title is-1" v-if="section.title">
-                {{ section.title }}
-              </p>
-              <p class="subtitle is-4" v-if="section.snippet">
-                {{ section.snippet }}
-              </p>
+              <p class="title is-1" v-if="section.title">{{ section.title }}</p>
+              <p class="subtitle is-4" v-if="section.snippet">{{ section.snippet }}</p>
+
+              <div v-if="section.links">
+                <CoolLink
+                  v-for="link in section.links"
+                  :key="link.href"
+                  :to="link.href"
+                  :icon="link.icon.name"
+                  :pack="link.icon.pack"
+                >{{ link.name }}</CoolLink>
+              </div>
+
               <div class="is-content" v-if="section.content">
-                <span
-                  v-for="(paragraph, index) in section.content.paragraphs"
-                  :key="index"
-                >
+                <span v-for="(paragraph, index) in section.content.paragraphs" :key="index">
                   <p v-if="paragraph">{{ paragraph }}</p>
                 </span>
               </div>
@@ -35,7 +39,11 @@
 </template>
 
 <script>
+import CoolLink from '@/components/molecoles/CoolLink'
 export default {
+  components: {
+    CoolLink,
+  },
   props: {
     section: {
       type: Object,
@@ -43,17 +51,20 @@ export default {
     },
     reversed: {
       type: Boolean,
-      default: false
+      default: false,
     },
     horizontal: {
       type: Boolean,
-      default: true
-    }
+      default: true,
+    },
   },
   computed: {
-    isHorizontal(){
-      return this.section.horizontal === false || this.section.horizontal === true ? this.section.horizontal : this.horizontal
-    }
-  }
+    isHorizontal() {
+      return this.section.horizontal === false ||
+        this.section.horizontal === true
+        ? this.section.horizontal
+        : this.horizontal
+    },
+  },
 }
 </script>
