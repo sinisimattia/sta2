@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <div class="hero is-large">
+      <div class="hero is-fullheight">
         <div class="hero-body">
           <div class="container section">
             <div class="columns is-vcentered">
