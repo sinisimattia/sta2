@@ -42,13 +42,15 @@
 </template>
 
 <script>
-import { newsletter } from '~/snisni.config.json'
-
 export default {
-  data() {
-    return {
-      link: newsletter.url,
-      code: newsletter.code,
+  props: {
+    link: {
+      type: String,
+      required: true
+    },
+    code: {
+      type: String,
+      required: true
     }
   },
 }

@@ -45,10 +45,8 @@
     <section class="footer">
       <div class="container">
         <section class="columns is-vcentered">
-          <aside class="column is-two-thirds" v-if="links.newsletter">
-            <p class="title has-text-centered is-2">Never miss an update!</p>
-            <NewsletterForm />
-            <p class="subtitle has-text-centered">Don't worry, we hate spam.</p>
+          <aside class="column is-two-thirds" v-if="newsletter">
+            <NewsletterForm :code="newsletter.code" :link="newsletter.link"/>
           </aside>
 
           <aside class="column">
@@ -81,7 +79,7 @@
 </template>
 
 <script>
-import { links, identity } from '~/snisni.config.json'
+import { links, identity, newsletter } from '~/snisni.config.json'
 import { navigation } from '@/config/navigation.json'
 import { contacts } from '@/config/contacts.json'
 
@@ -106,6 +104,7 @@ export default {
       cta: navigation.cta,
       logo: identity.logo,
       credit: identity.credit,
+      newsletter,
     }
   },
 }
