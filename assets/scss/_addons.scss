@@ -116,3 +116,9 @@ body {
 .columns.is-reversed {
   flex-direction: row-reverse;
 }
+
+.is-primary, .is-link {
+  a {
+    color: inherit;
+  }
+}
