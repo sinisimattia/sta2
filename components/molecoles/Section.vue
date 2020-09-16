@@ -8,7 +8,7 @@
               <img :src="require(`~/assets/img/${section.image}`)" alt />
             </div>
 
-            <div class="column">
+            <div class="column" v-if="hasContent">
               <p class="title is-2" v-if="section.title">{{ section.title }}</p>
               <p class="subtitle is-4" v-if="section.snippet">{{ section.snippet }}</p>
 
@@ -66,6 +66,9 @@ export default {
         ? this.section.horizontal
         : this.horizontal
     },
+    hasContent() {
+      return this.section.title || this.section.snippet || this.section.links || this.section.content
+    }
   },
 }
 </script>
