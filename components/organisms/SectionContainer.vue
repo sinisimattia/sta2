@@ -4,16 +4,14 @@
       v-if="title"
       class="title is-0-desktop has-text-centered is-block is-wide is-marginless section"
     >{{title}}</span>
-    <div>
-      <hooper v-if="mode == 'slider'">
+    <div class="is-block">
+      <hooper v-if="mode == 'slider'" :itemsToShow="3" centerMode infiniteScroll autoPlay>
         <slide
           v-for="(section, index) in sections"
           :key="index"
+          :index="index"
         >
-          <Section
-            :class="{ 'column': (mode == 'columns') }"
-            :section="section"
-          />
+          <Section :section="section" />
         </slide>
       </hooper>
 

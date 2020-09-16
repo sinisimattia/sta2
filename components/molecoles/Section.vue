@@ -3,11 +3,8 @@
     <div class="hero-body">
       <div class="container">
         <div class="section">
-          <div
-            class="is-vcentered"
-            :class="{ columns: isHorizontal,'is-reversed': reversed || section.reversed }"
-          >
-            <div class="column" v-if="section.image">
+          <div :class="{ 'columns is-vcentered': isHorizontal,'is-reversed': reversed || section.reversed }">
+            <div :class="{ 'column': isHorizontal }" v-if="section.image">
               <img :src="require(`~/assets/img/${section.image}`)" alt />
             </div>
 
