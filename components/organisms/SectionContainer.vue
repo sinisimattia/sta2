@@ -1,26 +1,46 @@
 <template>
   <div>
-    <span v-if="title" class="title is-0-desktop has-text-centered is-block is-wide is-marginless section">{{title}}</span>
-    <div
-      :class="{ 'columns section-column': columns }"
-      class="is-gapless is-vcentered is-marginless"
-    >
-      <Section
-        :class="{ column: columns }"
-        :section="section"
-        v-for="(section, index) in sections"
-        :key="index"
-      />
+    <span
+      v-if="title"
+      class="title is-0-desktop has-text-centered is-block is-wide is-marginless section"
+    >{{title}}</span>
+    <div>
+      <hooper v-if="mode == 'slider'">
+        <slide
+          v-for="(section, index) in sections"
+          :key="index"
+        >
+          <Section
+            :class="{ 'column': (mode == 'columns') }"
+            :section="section"
+          />
+        </slide>
+      </hooper>
+
+      <div
+        v-else
+        :class="{ 'columns section-column': (mode == 'columns') }"
+        class="is-gapless is-vcentered is-marginless"
+      >
+        <Section
+          :class="{ 'column': (mode == 'columns') }"
+          :section="section"
+          v-for="(section, index) in sections"
+          :key="index"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Section from '@/components/molecoles/Section'
-
+import { Hooper, Slide } from 'hooper'
 export default {
   components: {
     Section,
+    Hooper,
+    Slide,
   },
   props: {
     title: {
@@ -30,9 +50,9 @@ export default {
       type: Array,
       required: true,
     },
-    columns: {
-      type: Boolean,
-      default: false,
+    mode: {
+      type: String,
+      default: '',
     },
   },
 }

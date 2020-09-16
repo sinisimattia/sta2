@@ -27,28 +27,28 @@
           v-if="cardSections"
           :title="cardSections.title"
           :sections="cardSections.sections"
-          columns
+          mode="columns"
         />
 
         <SectionContainer
           v-if="softwareSections"
           :title="softwareSections.title"
           :sections="softwareSections.sections"
-          columns
+          mode="columns"
         />
 
         <SectionContainer
           v-if="billSections"
           :title="billSections.title"
           :sections="billSections.sections"
-          columns
+          mode="columns"
         />
 
         <SectionContainer
           v-if="partnerSections"
           :title="partnerSections.title"
           :sections="partnerSections.sections"
-          columns
+          mode="slider"
         />
       </div>
     </div>
