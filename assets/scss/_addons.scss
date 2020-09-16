@@ -130,7 +130,7 @@ body {
 
 .thumbnail {
   img {
-    height: $thumbnail-side;
+    max-height: $thumbnail-side;
     width: auto;
 
     display: flex;

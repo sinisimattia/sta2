@@ -10,7 +10,7 @@
           v-for="(section, index) in sections"
           :key="index"
           :index="index"
-          class="thumbnail is-adaptive is-vcentered"
+          class="thumbnail is-vcentered"
         >
           <Section :section="section"/>
         </slide>
