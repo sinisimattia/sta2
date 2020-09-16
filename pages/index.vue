@@ -43,6 +43,13 @@
           :sections="billSections.sections"
           columns
         />
+
+        <SectionContainer
+          v-if="partnerSections"
+          :title="partnerSections.title"
+          :sections="partnerSections.sections"
+          columns
+        />
       </div>
     </div>
   </div>
@@ -54,6 +61,7 @@ import mainSections from '~/config/home.json'
 import cardSections from '~/config/card.json'
 import softwareSections  from '~/config/software.json'
 import billSections from '~/config/bill.json'
+import partnerSections from '~/config/partners.json'
 import SectionContainer from '@/components/organisms/SectionContainer'
 
 export default {
@@ -68,6 +76,7 @@ export default {
       cardSections,
       softwareSections,
       billSections,
+      partnerSections
     }
   },
 }
