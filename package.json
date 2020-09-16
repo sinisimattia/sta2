@@ -29,7 +29,8 @@
     "nuxt": "^2.14.4",
     "nuxt-buefy": "^0.4.3",
     "nuxt-fontawesome": "^0.4.0",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
