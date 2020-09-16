@@ -19,5 +19,6 @@
   "links": {
     "privacy_policy": "http://www.protecnocard.it/privacy-policy/",
     "report_issues": "https://github.com/sinisimattia/etiqa-website/issues"
-  }
+  },
+  "newsletter": null
 }
