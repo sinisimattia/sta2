@@ -5,7 +5,7 @@
       class="title is-0-desktop has-text-centered is-block is-wide is-marginless section"
     >{{title}}</span>
     <div class="is-block">
-      <hooper v-if="mode == 'slider'" class="has-auto-height" :itemsToShow="3" centerMode infiniteScroll>
+      <hooper v-if="mode == 'slider'" class="has-auto-height" :itemsToShow="3" centerMode infiniteScroll autoPlay>
         <slide
           v-for="(section, index) in sections"
           :key="index"
