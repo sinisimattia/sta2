@@ -127,3 +127,27 @@ body {
 .has-auto-height {
   height: auto;
 }
+
+.thumbnail {
+  img {
+    height: $thumbnail-side;
+    width: auto;
+
+    display: flex;
+    margin: auto;
+  }
+
+  &.is-adaptive {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &.is-square {
+    img {
+      height: $thumbnail-side;
+      width: $thumbnail-side;
+    }
+  }
+}
