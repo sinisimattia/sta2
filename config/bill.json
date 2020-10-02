@@ -49,20 +49,9 @@
             "type": "dark",
             "content": {
                 "paragraphs": [
-                    "Scegliere Bill è partecipare ad un'azione socialmente utile. Sii come Bill Magazine sostiene il Movimento Etico Digitale per portare formazione e informazione al buon utilizzo della comunicazione sul web.",
-                    "La versione definitiva del sito verrà rilasciata a breve!"
+                    "Scegliere Bill è partecipare ad un'azione socialmente utile. Sii come Bill Magazine sostiene il Movimento Etico Digitale per portare formazione e informazione al buon utilizzo della comunicazione sul web."
                 ]
-            },
-            "links": [
-                {
-                    "name": "Visita il sito (DEMO)",
-                    "icon": {
-                        "pack": "fas",
-                        "name": "external-link-alt"
-                    },
-                    "href": "https://billmagazine.herokuapp.com"
-                }
-            ]
+            }
         }
     ]
 }
