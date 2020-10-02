@@ -1,10 +1,11 @@
 {
     "title": "Un magazine che parla di etica.",
+    "type": "dark",
     "sections": [
         {
             "id": "magazine",
             "horizontal": false,
-            "snippet": "Siamo esclusivisti in pubblicità per il Primo Magazine italiano che parla di Etica e Buona educazione. Nasce dalla Pagina Sii come Bill",
+            "snippet": "Se vuoi fare pubblicità sul Magazine contattaci. Ti consigliamo il modo migliore per dare visibilità alla tua azienda o attività commerciale.",
             "links": [
                 {
                     "name": "Facebook",
@@ -43,12 +44,23 @@
         },
         {
             "horizontal": false,
-            "title": "Bill diventa magazine.",
+            "title": "Sii Come Bill Magazine",
+            "type": "dark",
             "content": {
                 "paragraphs": [
-                    "Preso come esempio in qualità di caso studio su libri di testo e Università, a settembre diventa un Magazine con la direzione di Monica Landro, giornalista e discografica."
+                    "Scegliere Bill è partecipare ad un'azione socialmente utile. Sii come Bill Magazine sostiene il Movimento Etico Digitale per portare formazione e informazione al buon utilizzo della comunicazione sul web.."
                 ]
-            }
+            },
+            "links": [
+                {
+                    "name": "Visita il sito",
+                    "icon": {
+                        "pack": "fas",
+                        "name": "external-link-alt"
+                    },
+                    "href": "https://billmagazine.herokuapp.com"
+                }
+            ]
         }
     ]
 }
