@@ -20,7 +20,7 @@
                   :to="link.href"
                   :icon="link.icon.name"
                   :pack="link.icon.pack"
-                  :size="3"
+                  :size="2"
                 >
                   {{link.name}}
                 </CoolLink>
