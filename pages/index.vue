@@ -20,34 +20,30 @@
         </div>
       </div>
 
-      <SectionContainer v-if="mainSections" :sections="mainSections.sections" :title="mainSections.title"/>
+      <SectionContainer v-if="mainSections" v-bind="mainSections"/>
 
       <div id="card">
         <SectionContainer
           v-if="cardSections"
-          :title="cardSections.title"
-          :sections="cardSections.sections"
+          v-bind="cardSections"
           mode="columns"
         />
 
         <SectionContainer
           v-if="softwareSections"
-          :title="softwareSections.title"
-          :sections="softwareSections.sections"
+          v-bind="softwareSections"
           mode="columns"
         />
 
         <SectionContainer
           v-if="billSections"
-          :title="billSections.title"
-          :sections="billSections.sections"
+          v-bind="billSections"
           mode="columns"
         />
 
         <SectionContainer
           v-if="partnerSections"
-          :title="partnerSections.title"
-          :sections="partnerSections.sections"
+          v-bind="partnerSections"
           mode="slider"
         />
       </div>
