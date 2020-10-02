@@ -5,7 +5,7 @@
         <div class="section">
           <div :class="{ 'columns is-vcentered': isHorizontal,'is-reversed': reversed || section.reversed }">
             <div :class="{ 'column': isHorizontal }" v-if="section.image">
-              <img :src="require(`~/assets/img/${section.image}`)" alt />
+              <img :src="require(`~/assets/img/${section.image}`)" alt class="is-block is-centered"/>
             </div>
 
             <div class="column" v-if="hasContent">
