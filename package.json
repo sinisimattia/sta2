@@ -1,7 +1,7 @@
 {
-  "name": "etiqa-website",
+  "name": "sta2",
   "version": "1.0.0",
-  "description": "The official landing page for EtiQa Group",
+  "description": "Static site generator built with NuxtJS",
   "author": "Mattia Sinisi",
   "private": true,
   "engines": {
