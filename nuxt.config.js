@@ -118,6 +118,12 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    /**
+     * Babel configuration
+     */
+    babel: {
+      babelrc: true,
+    },
     /*
      ** You can extend webpack config here
      */
