@@ -1,4 +1,4 @@
-{
+export default {
     "title": "I nostri partner",
     "sections": [
         {

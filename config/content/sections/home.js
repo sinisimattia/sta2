@@ -1,4 +1,4 @@
-{
+export default {
   "sections": [
     {
       "id": "mission",

@@ -1,4 +1,4 @@
-{
+export default {
     "title": "Un magazine che parla di etica.",
     "type": "dark",
     "sections": [
