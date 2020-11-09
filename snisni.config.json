@@ -13,7 +13,9 @@
     "credit": "Built with 🧡 by Mattia Sinisi for ETIQA GROUP"
   },
   "components": {
-    "banner": {},
+    "banner": {
+      "image": "https://i.ibb.co/8Ptzc3V/sta2.png"
+    },
     "footer": {}
   },
   "links": {
