@@ -1,40 +1,42 @@
 export default {
   sections: [
     {
-      id: 'mission',
+      id: 'design',
       reversed: true,
-      title: 'La nostra missione',
+      title: 'Customizable Design',
       snippet:
-        'In un mercato in continua evoluzione siamo in grado di correre con te per raggiungere insieme i tuoi obiettivi.',
+        'Tweak the appearence to match your taste.',
       content: {
-        paragraphs: [''],
+        paragraphs: [
+          'You can either customize this page via simple options in the section file or by directly editing the source code.',
+          "It's up to you, really."
+        ],
       },
       type: 'primary',
       image: 'illustrations/ideation.svg',
     },
     {
-      id: 'us',
-      title: 'Chi siamo',
+      id: 'presets',
+      title: 'Choose your preset',
       snippet:
-        'Un team di professionisti che ama il proprio lavoro e che crede nell’Etica e nella Qualità.',
+        'Build now, learn later.',
       content: {
         paragraphs: [
-          'Crediamo in un mercato libero in cui vincano idee vincenti e che siano utili alla società.',
-          'Abbiamo creato un Team di persone in grado di creare progetti Smart.',
+          'Acces pre-built and pre-tested components and worry about your message, not its presentation.'
         ],
       },
       image: 'illustrations/team.svg',
     },
     {
-      id: 'growth',
-      title: 'Growth Hacking',
-      snippet: 'La soluzione per rendere efficace la propria comunicazione.',
+      id: 'performance',
+      title: 'Universally Performant',
+      snippet: 'Generate vanilla pages.',
       type: 'dark',
       reversed: true,
       content: {
         paragraphs: [
-          'Un processo di rapida sperimentazione attraverso una serie di canali di marketing con il fine di individuare i modi più efficaci per far crescere un business.',
-          'La scelta di linguaggi appropriati in base allo strumento utilizzato con una strategia di Marketing studiata ad hoc.',
+          'No framework needed.',
+          'The site is compiled and built ad hoc for the situation, making it universally deployable.',
         ],
       },
       image: 'illustrations/growing.svg',

@@ -1,16 +1,16 @@
 {
   "identity": {
-    "name": "ETIQA GROUP",
-    "slogan": "Professionisti della comunicazione",
+    "name": "",
+    "slogan": "Static site generator template built with NuxtJS",
     "logo": {
       "image": "",
       "alt": "/"
     },
     "icon": {
-      "src": "Etiqard.png",
+      "src": "https://i.ibb.co/8Ptzc3V/sta2.png",
       "type": "image/png"
     },
-    "credit": "Built with 🧡 by Mattia Sinisi for ETIQA GROUP"
+    "credit": "Built with 🧡 by Mattia Sinisi"
   },
   "components": {
     "banner": {
@@ -19,8 +19,7 @@
     "footer": {}
   },
   "links": {
-    "privacy_policy": "http://www.protecnocard.it/privacy-policy/",
-    "report_issues": "https://github.com/sinisimattia/etiqa-website/issues"
+    "report_issues": "https://github.com/sinisimattia/sta2/issues"
   },
   "newsletter": null
 }

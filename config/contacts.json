@@ -1,20 +1,20 @@
 {
   "contacts": [
     {
-      "name": "Vedi su GitHub",
+      "name": "GitHub",
       "icon": {
         "pack": "fab",
         "name": "github"
       },
-      "href": "https://github.com/sinisimattia/etiqa-website"
+      "href": "https://github.com/sinisimattia/sta2"
     },
     {
-      "name": "Contattaci",
+      "name": "Contact me",
       "icon": {
         "pack": "fas",
         "name": "envelope"
       },
-      "href": "mailto:info@etiqagroup.it"
+      "href": "mailto:mattia@snisni.it"
     }
   ]
 }
