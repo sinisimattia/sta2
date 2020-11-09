@@ -43,9 +43,5 @@ export default {
       sections,
     }
   },
-  mounted() {
-    console.log("Sections")
-    console.log(sections)
-  }
 }
 </script>
