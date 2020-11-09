@@ -24,14 +24,14 @@
 
       <template #end>
         <b-navbar-item tag="div">
-          <nuxt-link
-            :to="cta.href"
+          <a
+            :href="cta.href"
             class="button is-primary has-margin is-rounded"
           >
             <IconLabel :icon="cta.icon.name" :pack="cta.icon.pack">{{
               cta.name
             }}</IconLabel>
-          </nuxt-link>
+          </a>
         </b-navbar-item>
       </template>
     </b-navbar>
