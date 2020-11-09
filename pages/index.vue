@@ -20,32 +20,8 @@
         </div>
       </div>
 
-      <SectionContainer v-if="mainSections" v-bind="mainSections"/>
-
-      <div id="card">
-        <SectionContainer
-          v-if="cardSections"
-          v-bind="cardSections"
-          mode="columns"
-        />
-
-        <SectionContainer
-          v-if="softwareSections"
-          v-bind="softwareSections"
-          mode="columns"
-        />
-
-        <SectionContainer
-          v-if="billSections"
-          v-bind="billSections"
-          mode="columns"
-        />
-
-        <SectionContainer
-          v-if="partnerSections"
-          v-bind="partnerSections"
-          mode="slider"
-        />
+      <div v-if="sections">
+        <SectionContainer v-for="(s, i) in sections" :key="i" v-bind="s"/>
       </div>
     </div>
   </div>
@@ -53,12 +29,8 @@
 
 <script>
 import { identity } from '~/snisni.config.json'
-import mainSections from '~/config/home.json'
-import cardSections from '~/config/card.json'
-import softwareSections  from '~/config/software.json'
-import billSections from '~/config/bill.json'
-import partnerSections from '~/config/partners.json'
 import SectionContainer from '@/components/organisms/SectionContainer'
+import sections from "~/config/content"
 
 export default {
   components: {
@@ -68,12 +40,12 @@ export default {
     return {
       title: identity.name,
       subtitle: identity.slogan,
-      mainSections,
-      cardSections,
-      softwareSections,
-      billSections,
-      partnerSections
+      sections,
     }
   },
+  mounted() {
+    console.log("Sections")
+    console.log(sections)
+  }
 }
 </script>
