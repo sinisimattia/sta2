@@ -3,6 +3,10 @@
 @import 'addons/backgrounds';
 @import 'hooper/dist/hooper.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   &::-webkit-scrollbar {
     width: 0.5em;
@@ -16,8 +20,6 @@ body {
     background: $primary;
     border-radius: 1em;
   }
-
-  scroll-behavior: smooth;
 }
 
 .footer {
