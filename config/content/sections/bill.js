@@ -1,6 +1,7 @@
 export default {
     "title": "Un magazine che parla di etica.",
     "type": "dark",
+    "mode": "columns",
     "sections": [
         {
             "id": "magazine",

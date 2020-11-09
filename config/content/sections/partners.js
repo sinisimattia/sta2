@@ -1,4 +1,5 @@
 export default {
+    "mode": "slider",
     "title": "I nostri partner",
     "sections": [
         {

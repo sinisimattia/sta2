@@ -1,4 +1,5 @@
 export default {
+  "mode": "columns",
   "sections": [
     {
       "type": "primary",
