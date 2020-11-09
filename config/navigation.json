@@ -1,45 +1,29 @@
 {
   "navigation": {
     "cta": {
-      "name": "Card",
+      "name": "Get started",
       "icon": {
         "pack": "fas",
-        "name": "qrcode"
+        "name": "rocket"
       },
-      "href": "/#card"
+      "href": "https://github.com/sinisimattia/sta2"
     },
     "pages": [
       {
-        "name": "Mission",
+        "name": "Design",
         "icon": {
           "pack": "fas",
-          "name": "rocket"
+          "name": "pencil-ruler"
         },
-        "href": "/#mission"
+        "href": "/#design"
       },
       {
-        "name": "Chi Siamo",
+        "name": "Layouts",
         "icon": {
           "pack": "fas",
           "name": "user-friends"
         },
-        "href": "/#us"
-      },
-      {
-        "name": "Growth",
-        "icon": {
-          "pack": "fas",
-          "name": "seedling"
-        },
-        "href": "/#growth"
-      },
-      {
-        "name": "Sii Come Bill Magazine",
-        "icon": {
-          "pack": "fas",
-          "name": "newspaper"
-        },
-        "href": "/#magazine"
+        "href": "/#layout"
       }
     ]
   }

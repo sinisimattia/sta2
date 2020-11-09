@@ -1,5 +1,6 @@
 export default {
   mode: 'columns',
+  id: "layout",
   sections: [
     {
       type: 'primary',
