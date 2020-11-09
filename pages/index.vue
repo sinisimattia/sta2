@@ -21,7 +21,7 @@
       </div>
 
       <div v-if="sections">
-        <SectionContainer v-for="(s, i) in sections" :key="i" v-bind="s"/>
+        <SectionContainer v-for="(s, i) in sections" :key="i" v-bind="s" />
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
 <script>
 import { identity } from '~/snisni.config.json'
 import SectionContainer from '@/components/organisms/SectionContainer'
-import sections from "~/config/content"
+import sections from '~/config/content'
 
 export default {
   components: {

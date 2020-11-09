@@ -1,18 +1,36 @@
 <template>
-  <div class="hero" :class="section.type ? `is-${section.type}` : null" :id="section.id">
+  <div
+    class="hero"
+    :class="section.type ? `is-${section.type}` : null"
+    :id="section.id"
+  >
     <div class="hero-body">
       <div class="container">
         <div class="section">
-          <div :class="{ 'columns is-vcentered': isHorizontal,'is-reversed': reversed || section.reversed }">
-            <div :class="{ 'column': isHorizontal }" v-if="section.image">
-              <img :src="require(`~/assets/img/${section.image}`)" alt class="is-block is-centered"/>
+          <div
+            :class="{
+              'columns is-vcentered': isHorizontal,
+              'is-reversed': reversed || section.reversed,
+            }"
+          >
+            <div :class="{ column: isHorizontal }" v-if="section.image">
+              <img
+                :src="require(`~/assets/img/${section.image}`)"
+                alt
+                class="is-block is-centered"
+              />
             </div>
 
             <div class="column" v-if="hasContent">
               <p class="title is-2" v-if="section.title">{{ section.title }}</p>
-              <p class="subtitle is-4" v-if="section.snippet">{{ section.snippet }}</p>
+              <p class="subtitle is-4" v-if="section.snippet">
+                {{ section.snippet }}
+              </p>
 
-              <div v-if="section.links" class="columns is-vcentered is-centered">
+              <div
+                v-if="section.links"
+                class="columns is-vcentered is-centered"
+              >
                 <CoolLink
                   class="column"
                   v-for="link in section.links"
@@ -22,12 +40,15 @@
                   :pack="link.icon.pack"
                   :size="2"
                 >
-                  {{link.name}}
+                  {{ link.name }}
                 </CoolLink>
               </div>
 
               <div class="is-content" v-if="section.content">
-                <span v-for="(paragraph, index) in section.content.paragraphs" :key="index">
+                <span
+                  v-for="(paragraph, index) in section.content.paragraphs"
+                  :key="index"
+                >
                   <p v-if="paragraph">{{ paragraph }}</p>
                 </span>
               </div>
@@ -67,8 +88,13 @@ export default {
         : this.horizontal
     },
     hasContent() {
-      return this.section.title || this.section.snippet || this.section.links || this.section.content
-    }
+      return (
+        this.section.title ||
+        this.section.snippet ||
+        this.section.links ||
+        this.section.content
+      )
+    },
   },
 }
 </script>

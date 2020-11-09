@@ -46,7 +46,7 @@
       <div class="container section">
         <section class="columns is-vcentered">
           <aside class="column is-two-thirds" v-if="newsletter">
-            <NewsletterForm :code="newsletter.code" :link="newsletter.link"/>
+            <NewsletterForm :code="newsletter.code" :link="newsletter.link" />
           </aside>
 
           <aside class="column">
@@ -57,14 +57,18 @@
               :to="link.href"
               :icon="link.icon.name"
               :pack="link.icon.pack"
-              >
-                {{ link.name }}
-              </CoolLink>
+            >
+              {{ link.name }}
+            </CoolLink>
           </aside>
 
           <aside class="column">
-            <CoolLink :to="links.privacy_policy" icon="lock" class="has-padding">Privacy Policy</CoolLink>
-            <CoolLink :to="links.report_issues" icon="bug" class="has-padding">Report Bugs</CoolLink>
+            <CoolLink :to="links.privacy_policy" icon="lock" class="has-padding"
+              >Privacy Policy</CoolLink
+            >
+            <CoolLink :to="links.report_issues" icon="bug" class="has-padding"
+              >Report Bugs</CoolLink
+            >
           </aside>
         </section>
 

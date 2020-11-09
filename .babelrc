@@ -10,11 +10,11 @@
             }
           }
         ],
-        "@babel/preset-flow",
+        "@babel/preset-flow"
       ]
     }
   },
   "plugins": [
-    "wildcard",
+    "wildcard"
   ]
 }

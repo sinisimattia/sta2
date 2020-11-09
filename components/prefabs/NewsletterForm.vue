@@ -46,12 +46,12 @@ export default {
   props: {
     link: {
       type: String,
-      required: true
+      required: true,
     },
     code: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
 }
 </script>
