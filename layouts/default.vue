@@ -44,7 +44,7 @@
 
     <section class="footer">
       <div class="container section">
-        <section class="columns is-vcentered">
+        <section class="columns">
           <aside class="column is-two-thirds" v-if="newsletter">
             <NewsletterForm :code="newsletter.code" :link="newsletter.link" />
           </aside>
@@ -62,11 +62,11 @@
             </CoolLink>
           </aside>
 
-          <aside class="column">
-            <CoolLink :to="links.privacy_policy" icon="lock" class="has-padding"
+          <aside class="column" v-if="links">
+            <CoolLink v-if="links.privacy_policy" :to="links.privacy_policy" icon="lock" class="has-padding"
               >Privacy Policy</CoolLink
             >
-            <CoolLink :to="links.report_issues" icon="bug" class="has-padding"
+            <CoolLink v-if="links.report_issues" :to="links.report_issues" icon="bug" class="has-padding"
               >Report Bugs</CoolLink
             >
           </aside>
