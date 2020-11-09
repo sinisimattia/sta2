@@ -1,8 +1,12 @@
-# Frontend Web Client
+<div align="center">
 
-Built with Nuxt.js
+![](https://i.ibb.co/8Ptzc3V/sta2.png)
 
-![Issues](https://img.shields.io/github/issues/sinisimattia/etiqa-website?style=for-the-badge)
+## Static site generator built with NuxtJS
+
+![Issues](https://img.shields.io/github/issues/sinisimattia/sta2?style=for-the-badge)
+
+</div>
 
 ## Build Setup
 
